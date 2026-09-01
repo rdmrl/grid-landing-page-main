@@ -1,0 +1,92 @@
+:root {
+  --bg-color: hsl(228, 99%, 58%);
+  --text-color: hsl(0, 0%, 100%);
+  --border-color: hsl(220, 100%, 64%);
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 90%;
+  margin: 1em auto;
+}
+
+.content {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 54% 23% 23%;
+  grid-template-areas: "hero stats stats" "hero stats stats";
+  border: 1px solid var(--border-color);
+  border-width: 1px 1px 0 1px;
+}
+
+.hero {
+  grid-area: hero;
+  border: 1px solid var(--border-color);
+  border-width: 0 0 1px 0;
+  padding: 2em;
+}
+
+.stats {
+  border: 1px solid var(--border-color);
+  border-width: 0 1px 1px 1px;
+  padding: 2em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
