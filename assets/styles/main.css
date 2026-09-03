@@ -206,3 +206,36 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-height: 1025px) {
+  .container {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1280px;
+  }
+  main.content {
+    border-width: 1px 0 0 1px;
+  }
+}
+
+@media (max-width: 1201px) {
+  .hero {
+    padding-right: 8em;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero {
+    padding-right: 5em;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+}
